@@ -6,7 +6,7 @@ User = get_user_model()
 
 class Group(models.Model):
     title = models.CharField("Группы", max_length=200)
-    slug = models.SlugField("Адрес", max_length=400)
+    slug = models.SlugField("Адрес", max_length=400, unique=True)
     description = models.TextField("Описание")
     related_name = 'Group'
 
