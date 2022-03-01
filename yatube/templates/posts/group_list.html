@@ -1,6 +1,6 @@
 {% extends 'base.html'%}
   {% block content %}
-    <p>{{group.description}}</p>
+    <p>{{ group.description }}</p>
     {% for post in posts %}
       <ul>
         <li>
@@ -11,5 +11,5 @@
         </li>
       </ul>
         <p>{{ post.text }}</p>  
-  {% endfor %} 
-  {%endblock%}
+    {% endfor %} 
+  {% endblock %}
